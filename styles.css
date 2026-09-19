@@ -880,3 +880,21 @@ body {
     font-size: inherit;
     letter-spacing: inherit;
 }
+
+/* -------------------------
+   CAROUSEL ARROWS - MOBILE
+   ------------------------- */
+
+.slider-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 34px;
+}
+
+.slider-arrow-left {
+    left: 10px;
+}
+
+.slider-arrow-right {
+    right: 10px;
+}
