@@ -579,23 +579,15 @@ body {
     
 }
 
-
-
-
 /* =========================================================
    RESPONSIVE DESIGN
    ========================================================= */
-
 
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
-
-    /* -------------------------
-       MAIN NAVBAR
-       ------------------------- */
 
     .navbarTitle {
         font-size: 45px;
@@ -615,11 +607,6 @@ body {
         font-size: 16px;
     }
 
-
-    /* -------------------------
-       PROJECT PAGE NAVBAR
-       ------------------------- */
-
     .navbar-2 {
         padding: 15px 20px;
     }
@@ -633,19 +620,9 @@ body {
         font-size: 16px;
     }
 
-
-    /* -------------------------
-       HEADER WAVES
-       ------------------------- */
-
     .header-wave {
         height: 140px;
     }
-
-
-    /* -------------------------
-       PROJECT CONTENT
-       ------------------------- */
 
     .pageContainer {
         width: 96%;
@@ -659,9 +636,7 @@ body {
     .description-Title {
         font-size: 40px;
     }
-
 }
-
 
 
 /* =========================================================
@@ -670,74 +645,50 @@ body {
 
 @media (max-width: 650px) {
 
-
-    /* =====================================================
-       HOMEPAGE HEADER
-       ===================================================== */
+    /* Homepage header */
 
     .navbar {
         min-height: 300px;
         height: auto;
-
         padding: 30px 15px 90px;
-
         gap: 10px;
     }
 
     .navbarTitle {
         font-size: clamp(34px, 10vw, 48px);
-
         letter-spacing: 3px;
-
         white-space: nowrap;
     }
 
     .navbarDescription {
         font-size: clamp(18px, 6vw, 25px);
-
         letter-spacing: 8px;
-
         transform: none;
     }
 
     .button-group {
         position: static;
-
         transform: none;
-
         margin-top: 35px;
-
         order: 3;
-
         z-index: 5;
     }
 
     .button {
         padding: 7px 14px;
-
         font-size: 16px;
     }
-
-
-    /* -------------------------
-       HEADER WAVES
-       ------------------------- */
 
     .header-wave {
         height: 100px;
     }
 
 
-
-    /* =====================================================
-       HOMEPAGE GALLERY
-       ===================================================== */
+    /* Homepage gallery - two projects per row */
 
     .gallery {
         width: 100%;
-
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -747,141 +698,92 @@ body {
 
     .gallery-item img {
         width: 100%;
-
         aspect-ratio: 4 / 3;
-
         object-fit: cover;
-
         display: block;
     }
 
     .gallery-item > .content {
         font-size: 16px;
-
         line-height: 1.1;
-
         padding: 6px;
-
         text-align: center;
     }
 
 
-
-    /* =====================================================
-       PROJECT PAGE NAVIGATION
-       ===================================================== */
+    /* Project-page navigation */
 
     .navbar-2 {
         min-height: 110px;
-
         padding: 20px 15px;
-
         display: flex;
-
         flex-direction: column;
-
         justify-content: center;
         align-items: center;
-
         gap: 10px;
     }
 
     .navbarTitle-2 {
         font-size: 30px;
-
         text-align: center;
-
         letter-spacing: 3px;
     }
 
     .button-group-2 {
         width: 100%;
-
         display: flex;
-
         justify-content: center;
-
         gap: 8px;
     }
 
     .button-2 {
         padding: 7px 14px;
-
         font-size: 16px;
     }
 
 
+    /* Project pages - artwork gets priority */
 
-    /* =====================================================
-   PROJECT PAGES
-   ===================================================== */
+    .pageContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-.pageContainer {
-    width: 100%;
-    padding: 0 12px;
-}
+    .description {
+        width: 100%;
+        padding: 18px 24px;
+        font-size: 14px;
+        line-height: 1.45;
+        letter-spacing: 0;
+        text-align: left;
+    }
 
-.description {
-    padding: 20px 15px;
+    .description-Title {
+        width: 100%;
+        padding: 30px 20px 10px;
+        font-size: 24px;
+        line-height: 1.15;
+        letter-spacing: 0;
+        text-align: center;
+    }
 
-    font-size: 15px;
-    line-height: 1.5;
-
-    letter-spacing: 0.5px;
-}
-
-.description-Title {
-    padding: 20px 10px 5px;
-
-    font-size: 27px;
-    line-height: 1.15;
-
-    letter-spacing: 1px;
-}
+    .singleImages,
+    .hero-image,
+    .video {
+        width: calc(100% - 24px);
+        max-width: none;
+        height: auto;
+        display: block;
+        margin: 25px 12px;
+        padding: 0;
+    }
 
 
-/* -------------------------
-   PROJECT IMAGES
-   ------------------------- */
-
-.singleImages {
-    width: 100%;
-    max-width: none;
-
-    height: auto;
-
-    display: block;
-
-    margin: 20px auto;
-}
-
-.hero-image {
-    width: 100%;
-    max-width: none;
-
-    height: auto;
-
-    padding: 0;
-
-    display: block;
-
-    margin: 20px auto;
-}
-
-.video {
-    width: 100%;
-    height: auto;
-
-    margin: 20px auto;
-}
-
-    /* -------------------------
-       PROJECT IMAGE ROWS
-       ------------------------- */
+    /* Image rows */
 
     .row {
         width: 100%;
-
         display: flex;
     }
 
@@ -891,20 +793,13 @@ body {
 
     .rowImages {
         width: 100%;
-
         object-fit: cover;
     }
 
 
+    /* Carousels */
 
-    /* =====================================================
-       CAROUSELS
-       ===================================================== */
-
-    .slider-wrapper {
-        width: 100%;
-    }
-
+    .slider-wrapper,
     .slider {
         width: 100%;
     }
@@ -912,14 +807,10 @@ body {
     .slider-arrow {
         width: 24px;
         height: 24px;
-
         padding: 0;
-
         font-size: 26px;
         line-height: 1;
-
         display: flex;
-
         justify-content: center;
         align-items: center;
     }
@@ -933,77 +824,53 @@ body {
     }
 
 
-
-    /* =====================================================
-       ABOUT PAGE
-       ===================================================== */
+    /* About page */
 
     .card-container {
         width: 100%;
-
         min-height: calc(100vh - 110px);
-
         padding: 30px 20px 150px;
     }
 
     .about-me {
         width: 100%;
         max-width: 100%;
-
         margin: 0;
-
         padding: 20px 5px;
-
-        font-size: 18px;
-
-        line-height: 1.6;
-
+        font-size: 16px;
+        line-height: 1.55;
         letter-spacing: 0;
     }
 
     .about-me h1 {
         margin: 0 0 30px;
-
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .about-me p {
         width: 100%;
         max-width: none;
-
         margin: 0 0 25px;
-
         padding: 0;
-
-        font-size: 18px;
-
-        line-height: 1.6;
-
+        font-size: 16px;
+        line-height: 1.55;
         letter-spacing: 0;
     }
 
     .about-me .tiki {
         font-size: inherit;
-
         letter-spacing: inherit;
     }
 
 
-
-    /* =====================================================
-       CONTACT CARD
-       ===================================================== */
+    /* Contact card */
 
     .card {
         width: 94%;
-
         min-height: 430px;
     }
 
-    .card-inner {
-        min-height: 430px;
-    }
-
+    .card-inner,
     .front,
     .back {
         min-height: 430px;
@@ -1019,19 +886,16 @@ body {
 
     .front p {
         font-size: 20px;
-
         letter-spacing: 2px;
     }
 
     .back {
         padding: 20px;
-
         gap: 12px;
     }
 
     .back a {
         font-size: 20px;
-
         letter-spacing: 2px;
     }
 
@@ -1040,32 +904,21 @@ body {
     }
 
 
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
+    /* Footer */
 
     .footer {
         flex-direction: column;
-
         gap: 5px;
-
         padding: 20px 10px;
-
         font-size: 16px;
-
         text-align: center;
     }
 
 
-
-    /* =====================================================
-       BACK TO TOP BUTTON
-       ===================================================== */
+    /* Back-to-top button */
 
     .arrow-fixed {
         right: 15px;
-
         bottom: 15px;
     }
 
@@ -1077,6 +930,4 @@ body {
     .arrow {
         font-size: 58px;
     }
-
 }
-
