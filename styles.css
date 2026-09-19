@@ -885,16 +885,21 @@ body {
    CAROUSEL ARROWS - MOBILE
    ------------------------- */
 
-.slider-arrow {
-    width: 32px;
-    height: 32px;
-    font-size: 34px;
-}
+@media (max-width: 650px) {
 
-.slider-arrow-left {
-    left: 10px;
-}
+    .slider-arrow {
+        width: 24px;
+        height: 24px;
+        font-size: 26px;
+        padding: 0;
+        line-height: 1;
+    }
 
-.slider-arrow-right {
-    right: 10px;
+    .slider-arrow-left {
+        left: 8px;
+    }
+
+    .slider-arrow-right {
+        right: 8px;
+    }
 }
