@@ -1056,3 +1056,66 @@ body {
     }
 
 }
+
+/* =====================================================
+   PROJECT PAGES
+   ===================================================== */
+
+.pageContainer {
+    width: 100%;
+    padding: 0 12px;
+}
+
+.description {
+    padding: 20px 15px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    letter-spacing: 0.5px;
+}
+
+.description-Title {
+    padding: 20px 10px 5px;
+
+    font-size: 27px;
+    line-height: 1.15;
+
+    letter-spacing: 1px;
+}
+
+
+/* -------------------------
+   PROJECT IMAGES
+   ------------------------- */
+
+.singleImages {
+    width: 100%;
+    max-width: none;
+
+    height: auto;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: none;
+
+    height: auto;
+
+    padding: 0;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+
+    margin: 20px auto;
+}
