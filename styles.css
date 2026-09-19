@@ -582,7 +582,43 @@ body {
 
 
 
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media (max-width: 900px) {
+
+    /* -------------------------
+       MAIN NAVBAR
+       ------------------------- */
+
+    .navbarTitle {
+        font-size: 45px;
+    }
+
+    .navbarDescription {
+        font-size: 25px;
+        letter-spacing: 12px;
+    }
+
+    .button-group {
+        right: 15px;
+    }
+
+    .button {
+        padding: 7px 18px;
+        font-size: 16px;
+    }
+
+
+    /* -------------------------
+       PROJECT PAGE NAVBAR
+       ------------------------- */
 
     .navbar-2 {
         padding: 15px 20px;
@@ -596,136 +632,348 @@ body {
         padding: 7px 18px;
         font-size: 16px;
     }
+
+
+    /* -------------------------
+       HEADER WAVES
+       ------------------------- */
+
+    .header-wave {
+        height: 140px;
+    }
+
+
+    /* -------------------------
+       PROJECT CONTENT
+       ------------------------- */
+
+    .pageContainer {
+        width: 96%;
+    }
+
+    .description {
+        font-size: 22px;
+        padding: 30px;
+    }
+
+    .description-Title {
+        font-size: 40px;
+    }
+
 }
 
-@media (max-width: 600px) {
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+
+    /* =====================================================
+       HOMEPAGE HEADER
+       ===================================================== */
+
+    .navbar {
+        min-height: 300px;
+        height: auto;
+
+        padding: 30px 15px 90px;
+
+        gap: 10px;
+    }
+
+    .navbarTitle {
+        font-size: clamp(34px, 10vw, 48px);
+
+        letter-spacing: 3px;
+
+        white-space: nowrap;
+    }
+
+    .navbarDescription {
+        font-size: clamp(18px, 6vw, 25px);
+
+        letter-spacing: 8px;
+
+        transform: none;
+    }
+
+    .button-group {
+        position: static;
+
+        transform: none;
+
+        margin-top: 35px;
+
+        order: 3;
+
+        z-index: 5;
+    }
+
+    .button {
+        padding: 7px 14px;
+
+        font-size: 16px;
+    }
+
+
+    /* -------------------------
+       HEADER WAVES
+       ------------------------- */
+
+    .header-wave {
+        height: 100px;
+    }
+
+
+
+    /* =====================================================
+       HOMEPAGE GALLERY
+       ===================================================== */
+
+    .gallery {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+
+        aspect-ratio: 4 / 3;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+    .gallery-item > .content {
+        font-size: 16px;
+
+        line-height: 1.1;
+
+        padding: 6px;
+
+        text-align: center;
+    }
+
+
+
+    /* =====================================================
+       PROJECT PAGE NAVIGATION
+       ===================================================== */
 
     .navbar-2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        min-height: 110px;
 
-        padding: 15px;
+        padding: 20px 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
         gap: 10px;
     }
 
     .navbarTitle-2 {
         font-size: 30px;
+
         text-align: center;
+
         letter-spacing: 3px;
     }
 
     .button-group-2 {
         width: 100%;
+
+        display: flex;
+
         justify-content: center;
+
+        gap: 8px;
     }
 
     .button-2 {
-        padding: 6px 12px;
-        font-size: 15px;
-    }
-}
+        padding: 7px 14px;
 
-@media (max-width: 600px) {
-
-    .navbar {
-        min-height: 260px;
-        padding: 20px 15px;
-    }
-
-    .navbarTitle {
-        font-size: 38px;
-    }
-
-    .navbarDescription {
-        font-size: 22px;
-        letter-spacing: 8px;
-    }
-
-    .button {
-        padding: 7px 15px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 900px) {
-
-    .button-group {
-        right: 15px;
-    }
-
-    .button {
-        padding: 7px 18px;
         font-size: 16px;
     }
 
-    .navbarTitle {
-        font-size: 45px;
+
+
+    /* =====================================================
+       PROJECT PAGES
+       ===================================================== */
+
+    .pageContainer {
+        width: 96%;
     }
 
-    .navbarDescription {
-        font-size: 25px;
-        letter-spacing: 12px;
-    }
-}
+    .description {
+        padding: 20px;
 
-@media (max-width: 650px) {
+        font-size: 18px;
 
-    .navbar {
-        min-height: 280px;
-        height: auto;
-
-        padding: 30px 15px;
-        gap: 15px;
+        line-height: 1.6;
     }
 
-    .button-group {
-        position: static;
-        transform: none;
+    .description-Title {
+        padding: 15px 10px 0;
 
-        order: 3;
+        font-size: 32px;
 
-        margin-top: 10px;
+        line-height: 1.2;
     }
 
-    .navbarTitle {
-        font-size: 38px;
+
+    /* -------------------------
+       PROJECT IMAGES
+       ------------------------- */
+
+    .singleImages {
+        width: 90%;
     }
 
-    .navbarDescription {
-        font-size: 20px;
-        letter-spacing: 7px;
+    .hero-image {
+        width: 100%;
+
+        padding: 5px;
     }
 
-    .button {
-        padding: 7px 15px;
-        font-size: 15px;
-    }
-}
 
-@media (max-width: 900px) {
-    .header-wave {
-        height: 140px;
-    }
-}
+    /* -------------------------
+       PROJECT IMAGE ROWS
+       ------------------------- */
 
-@media (max-width: 650px) {
-    .header-wave {
-        height: 100px;
-    }
-}
+    .row {
+        width: 100%;
 
-@media (max-width: 600px) {
-    .footer {
-        flex-direction: column;
-        gap: 5px;
+        display: flex;
     }
-}
 
-@media (max-width: 700px) {
+    .column {
+        width: 33.33%;
+    }
+
+    .rowImages {
+        width: 100%;
+
+        object-fit: cover;
+    }
+
+
+
+    /* =====================================================
+       CAROUSELS
+       ===================================================== */
+
+    .slider-wrapper {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider-arrow {
+        width: 24px;
+        height: 24px;
+
+        padding: 0;
+
+        font-size: 26px;
+        line-height: 1;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-arrow-left {
+        left: 8px;
+    }
+
+    .slider-arrow-right {
+        right: 8px;
+    }
+
+
+
+    /* =====================================================
+       ABOUT PAGE
+       ===================================================== */
+
+    .card-container {
+        width: 100%;
+
+        min-height: calc(100vh - 110px);
+
+        padding: 30px 20px 150px;
+    }
+
+    .about-me {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        padding: 20px 5px;
+
+        font-size: 18px;
+
+        line-height: 1.6;
+
+        letter-spacing: 0;
+    }
+
+    .about-me h1 {
+        margin: 0 0 30px;
+
+        font-size: 42px;
+    }
+
+    .about-me p {
+        width: 100%;
+        max-width: none;
+
+        margin: 0 0 25px;
+
+        padding: 0;
+
+        font-size: 18px;
+
+        line-height: 1.6;
+
+        letter-spacing: 0;
+    }
+
+    .about-me .tiki {
+        font-size: inherit;
+
+        letter-spacing: inherit;
+    }
+
+
+
+    /* =====================================================
+       CONTACT CARD
+       ===================================================== */
 
     .card {
         width: 94%;
+
         min-height: 430px;
     }
 
@@ -748,158 +996,63 @@ body {
 
     .front p {
         font-size: 20px;
+
         letter-spacing: 2px;
     }
 
     .back {
         padding: 20px;
+
         gap: 12px;
     }
 
     .back a {
         font-size: 20px;
+
         letter-spacing: 2px;
     }
 
     .back span {
         font-size: 28px;
     }
-}
 
-/* =========================================
-   MOBILE FIXES
-   ========================================= */
 
-@media (max-width: 650px) {
 
-    /* -------------------------
-       HOMEPAGE HEADER
-       ------------------------- */
+    /* =====================================================
+       FOOTER
+       ===================================================== */
 
-    .navbar {
-        min-height: 300px;
-        height: auto;
-        padding: 30px 15px 90px;
-        gap: 10px;
-    }
+    .footer {
+        flex-direction: column;
 
-    .navbarTitle {
-        font-size: clamp(34px, 10vw, 48px);
-        letter-spacing: 3px;
-        white-space: nowrap;
-    }
+        gap: 5px;
 
-    .navbarDescription {
-        font-size: clamp(18px, 6vw, 25px);
-        letter-spacing: 8px;
-        transform: none;
-    }
+        padding: 20px 10px;
 
-    .button-group {
-        position: static;
-        transform: none;
-        margin-top: 35px;
-        order: 3;
-        z-index: 5;
-    }
-
-    .button {
-        padding: 7px 14px;
         font-size: 16px;
+
+        text-align: center;
     }
 
 
-   /* -------------------------
-   HOMEPAGE GALLERY - MOBILE
-   ------------------------- */
 
-.gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+    /* =====================================================
+       BACK TO TOP BUTTON
+       ===================================================== */
 
-.gallery-item {
-    width: 100%;
-}
+    .arrow-fixed {
+        right: 15px;
 
-.gallery-item img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
-}
-
-.gallery-item > .content {
-    font-size: 16px;
-    line-height: 1.1;
-    padding: 6px;
-    text-align: center;
-}
-}
-
-/* -------------------------
-   ABOUT PAGE
-   ------------------------- */
-
-.card-container {
-    width: 100%;
-    min-height: calc(100vh - 110px);
-    padding: 30px 20px 150px;
-}
-
-.about-me {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 20px 5px;
-
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0;
-}
-
-.about-me h1 {
-    font-size: 42px;
-    margin: 0 0 30px;
-}
-
-.about-me p {
-    width: 100%;
-    max-width: none;
-
-    margin: 0 0 25px;
-    padding: 0;
-
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0;
-}
-
-.about-me .tiki {
-    font-size: inherit;
-    letter-spacing: inherit;
-}
-
-/* -------------------------
-   CAROUSEL ARROWS - MOBILE
-   ------------------------- */
-
-@media (max-width: 650px) {
-
-    .slider-arrow {
-        width: 24px;
-        height: 24px;
-        font-size: 26px;
-        padding: 0;
-        line-height: 1;
+        bottom: 15px;
     }
 
-    .slider-arrow-left {
-        left: 8px;
+    .arrow-container {
+        width: 55px;
+        height: 55px;
     }
 
-    .slider-arrow-right {
-        right: 8px;
+    .arrow {
+        font-size: 58px;
     }
+
 }
