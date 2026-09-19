@@ -765,3 +765,164 @@ body {
         font-size: 28px;
     }
 }
+
+/* =========================================
+   MOBILE FIXES
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    /* -------------------------
+       HOMEPAGE HEADER
+       ------------------------- */
+
+    .navbar {
+        min-height: 300px;
+        height: auto;
+        padding: 30px 15px 90px;
+        gap: 10px;
+    }
+
+    .navbarTitle {
+        font-size: clamp(34px, 10vw, 48px);
+        letter-spacing: 3px;
+        white-space: nowrap;
+    }
+
+    .navbarDescription {
+        font-size: clamp(18px, 6vw, 25px);
+        letter-spacing: 8px;
+        transform: none;
+    }
+
+    .button-group {
+        position: static;
+        transform: none;
+        margin-top: 35px;
+        order: 3;
+        z-index: 5;
+    }
+
+    .button {
+        padding: 7px 14px;
+        font-size: 16px;
+    }
+
+
+    /* -------------------------
+       HOMEPAGE GALLERY
+       ------------------------- */
+
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
+    .gallery-item > .content {
+        font-size: 20px;
+        line-height: 1.1;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    /* -------------------------
+       ABOUT PAGE
+       ------------------------- */
+
+    .card-container {
+        width: 100%;
+        min-height: calc(100vh - 100px);
+        padding: 30px 20px 150px;
+    }
+
+    .about-me {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: normal;
+    }
+
+    .about-me h1 {
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+
+    .about-me p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 25px;
+        line-height: 1.6;
+    }
+
+
+    /* -------------------------
+       SECONDARY NAVIGATION
+       ------------------------- */
+
+    .navbar-2 {
+        min-height: 110px;
+        padding: 20px 15px;
+        justify-content: center;
+    }
+
+    .navbarTitle-2 {
+        display: none;
+    }
+
+    .button-group-2 {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .button-2 {
+        padding: 7px 14px;
+        font-size: 16px;
+    }
+
+
+    /* -------------------------
+       FOOTER
+       ------------------------- */
+
+    .footer {
+        font-size: 16px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+
+    /* -------------------------
+       BACK TO TOP
+       ------------------------- */
+
+    .arrow-fixed {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .arrow-container {
+        width: 55px;
+        height: 55px;
+    }
+
+    .arrow {
+        font-size: 58px;
+    }
+}
