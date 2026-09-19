@@ -809,33 +809,33 @@ body {
     }
 
 
-    /* -------------------------
-       HOMEPAGE GALLERY
-       ------------------------- */
+   /* -------------------------
+   HOMEPAGE GALLERY - MOBILE
+   ------------------------- */
 
-    .gallery {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    .gallery-item {
-        width: 100%;
-    }
+.gallery-item {
+    width: 100%;
+}
 
-    .gallery-item img {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        display: block;
-    }
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
 
-    .gallery-item > .content {
-        font-size: 20px;
-        line-height: 1.1;
-        padding: 10px;
-        text-align: center;
-    }
+.gallery-item > .content {
+    font-size: 16px;
+    line-height: 1.1;
+    padding: 6px;
+    text-align: center;
+}
 }
 
 /* -------------------------
